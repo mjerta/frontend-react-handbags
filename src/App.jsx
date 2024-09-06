@@ -11,7 +11,6 @@ import Tile from "./components/Tile.jsx";
 
 function App() {
   return (
-    <>
       <div className="wrapper">
         <h1>Handbags & Purses</h1>
         <nav>
@@ -42,7 +41,7 @@ function App() {
           title="The simple bag"
           price={300}
         /> <Product
-          description={"best seller"}
+          description={"New collection"}
           img={bagFour}
           title="The trendy bag"
           price={150}
@@ -67,7 +66,6 @@ function App() {
           />
         </footer>
       </div>
-    </>
   )
 }
 
