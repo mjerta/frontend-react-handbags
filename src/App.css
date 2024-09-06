@@ -1,3 +1,7 @@
+.wrapper {
+  max-width: 990px;
+}
+
 main {
   margin: 24px 0;
   display: flex;
@@ -28,13 +32,18 @@ section {
   align-items: center;
 }
 
+.change-order {
+  order: 1;
+}
+
+
 section p {
   max-width: 200px;
 }
 
 button {
   border: 1px solid #BC4C2A;
-  color:  #BC4C2A;
+  color: #BC4C2A;
   background-color: transparent;
   font-size: 10px;
   padding: 8px 16px;
@@ -75,6 +84,17 @@ article span {
   padding: 4px;
 }
 
+article span:first-letter {
+  text-transform: uppercase;
+}
+
 article p {
   font-size: 10px;
+}
+
+@media screen and (min-width: 699px) {
+  .change-order {
+    order: 0
+  }
+
 }
