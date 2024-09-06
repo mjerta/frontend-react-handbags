@@ -1,4 +1,4 @@
-function StorySection({img, title, text}) {
+function Tile({img, title, text}) {
   return (
     <section>
         <h2>{title}</h2>
@@ -11,4 +11,4 @@ function StorySection({img, title, text}) {
   )
 }
 
-export default StorySection;
+export default Tile;

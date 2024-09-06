@@ -1,4 +1,4 @@
-function Article({description,img, title, price}) {
+function Product({description,img, title, price}) {
   return (
     <article>
       <span>{description}</span>
@@ -8,4 +8,4 @@ function Article({description,img, title, price}) {
     </article>
   )
 }
-export default Article;
+export default Product;
