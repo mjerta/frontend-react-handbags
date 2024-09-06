@@ -42,7 +42,7 @@ function App() {
               title={item.title}
               text={item.text}
               img={item.img}
-              changeOrder={}
+              changeOrder={item.changeOrder}
             />
           ))
         }
