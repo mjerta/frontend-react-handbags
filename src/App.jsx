@@ -52,7 +52,7 @@ function App() {
           <Tile
             // img={storyImageOne}
             title={"THE BRAND"}
-            text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda consectetur, distinctio, doloremque, illum labore nulla officia perferendis quaerat quam repudiandae vel vero. Adipisci ea eius, error facere, iste labore, laudantium molestiae numquam odit quasi qui recusandae reiciendis vero. Nam?"}
+            text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consectetur culpa cupiditate earum eveniet, officiis perspiciatis provident quam sequi tempore vero."}
           />
           <Tile
             img={storyImageOne}
@@ -63,7 +63,7 @@ function App() {
           <Tile
             // img={storyImageOne}
             title={"THE BRAND"}
-            text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda consectetur, distinctio, doloremque, illum labore nulla officia perferendis quaerat quam repudiandae vel vero. Adipisci ea eius, error facere, iste labore, laudantium molestiae numquam odit quasi qui recusandae reiciendis vero. Nam?"}
+            text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consectetur culpa cupiditate earum eveniet, officiis perspiciatis provident quam sequi tempore vero."}
           />
         </footer>
       </div>
