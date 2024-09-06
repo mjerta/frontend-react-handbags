@@ -1,6 +1,8 @@
-function Tile({img, title, text}) {
+function Tile({img, title, text, changeOrder}) {
   return (
-    <section>
+    <section className={
+      changeOrder && "change-order"
+    }>
       <h2>{title}</h2>
       {text && text.length > 0 ?
         <>

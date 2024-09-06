@@ -32,6 +32,10 @@ section {
   align-items: center;
 }
 
+.change-order {
+  order:3
+}
+
 section p {
   max-width: 200px;
 }
@@ -85,4 +89,9 @@ article span:first-letter {
 
 article p {
   font-size: 10px;
+}
+
+@media screen and (min-width: 800px) {
+
+
 }

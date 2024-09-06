@@ -1,71 +1,53 @@
 import './App.css'
+// Components
 import Button from "./components/Button.jsx";
 import Product from "./components/Product.jsx";
-import bagOne from "./assets/bag_1.png";
-import bagTwo from "./assets/bag_2.png";
-import bagThree from "./assets/bag_3.png";
-import bagFour from "./assets/bag_4.png";
-import storyImageOne from "./assets/brand.png";
-import storyImageTwo from "./assets/our_story.png";
 import Tile from "./components/Tile.jsx";
+
+// Objects
+import buttonsText from "./constants/buttons.js";
+import productsInfo from "./constants/products.js";
+import articles from "./constants/articles.js";
 
 function App() {
   return (
-      <div className="wrapper">
-        <h1>Handbags & Purses</h1>
-        <nav>
+    <div className="wrapper">
+      <h1>Handbags & Purses</h1>
+      <nav>
+        {buttonsText.map((item) => (
           <Button
-            text={"To the collection"}
+            key={item.text}
+            text={item.text}
           />
-          <Button
-            text={"shop all bags"}
-          />
-          <Button
-            text={"pre-orders"}
-          />
-        </nav>
-        <main>
-          <Product
-            description={"best seller"}
-            img={bagOne}
-            title="The handy bag"
-            price={400}
-          /> <Product
-          description={"best seller"}
-          img={bagTwo}
-          title="The stylish bag"
-          price={250}
-        /> <Product
-          description={"new collection"}
-          img={bagThree}
-          title="The simple bag"
-          price={300}
-        /> <Product
-          description={"New collection"}
-          img={bagFour}
-          title="The trendy bag"
-          price={150}
-        />
-        </main>
-        <footer>
-          <Tile
-            // img={storyImageOne}
-            title={"THE BRAND"}
-            text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consectetur culpa cupiditate earum eveniet, officiis perspiciatis provident quam sequi tempore vero."}
-          />
-          <Tile
-            img={storyImageOne}
-          />
-          <Tile
-            img={storyImageTwo}
-          />
-          <Tile
-            // img={storyImageOne}
-            title={"THE BRAND"}
-            text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consectetur culpa cupiditate earum eveniet, officiis perspiciatis provident quam sequi tempore vero."}
-          />
-        </footer>
-      </div>
+        ))}
+      </nav>
+      <main>
+        {
+          productsInfo.map((item) => (
+            <Product
+              key={item.title}
+              description={item.description}
+              img={item.img}
+              title={item.title}
+              price={item.price}
+            />
+          ))
+        }
+      </main>
+      <footer>
+        {
+          articles.map((item) => (
+            <Tile
+              key={item.title}
+              title={item.title}
+              text={item.text}
+              img={item.img}
+              changeOrder={}
+            />
+          ))
+        }
+      </footer>
+    </div>
   )
 }
 
